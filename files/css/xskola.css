@@ -1,0 +1,19 @@
+.aps-works{
+  display: block;
+}
+.aps-item {
+  margin: 0 0 10px 20px;
+  position: relative;
+}
+
+.aps-item:before {
+  content: "• ";
+  margin-right: 10px;
+  position: absolute;
+  left: -10px;
+}
+
+.aps-item:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}

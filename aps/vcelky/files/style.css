@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Shantell+Sans');
+
+html, body {
+  font-family: 'Shantell Sans', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1795px;
+
+}
+.background-image{
+  background-image: url(images/background-image.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 3px solid black;
+}
+
+* {
+  box-sizing: border-box;
+}
+.border-white{
+  border-top: 1px solid #FEFEFE;
+  margin: 30px 0 30px 0;
+}
+.center{
+  float: none;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column-left {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  background-color: #333;
+  color: #F49F0A;
+  opacity: .98;
+
+}
+.column-right {
+  float: right;
+  width: calc(100% - 23%); /* za mínus vložit hodnotu z .column-left - width */
+  padding: 10px;
+  background-color:#F49F0A;
+  color: #333;
+  opacity: .975;
+  background: linear-gradient(to right, #333, #F49F0A .6%);
+}
+.column-left ,.column-right{
+  min-height: calc(100vh - 25px - 140px);
+}
+.container img:nth-of-type(even) {
+  float: left;
+  margin: 0 10px 10px 0; /* top right bottom left */
+}
+
+.container img {
+  float: right;
+  margin: 0 0 10px 10px; /* top right bottom left */
+}
+.container img {
+  width: 280px;
+  height: auto;
+}
+.row{
+  display: flex;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

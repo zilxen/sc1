@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Včelí web - Bee our guest</title>
+    <link rel="stylesheet" href="files/style.css" type="text/css">
+    <link rel="stylesheet" href="files/css/pictures.css" type="text/css">
+    <link rel="stylesheet" href="files/css/navigation-bar.css" type="text/css">
+    <link rel="stylesheet" href="files/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="files/css/totop.css" type="text/css">
+    <link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="background-image">
+    <div class="row">
+      <div class="column-left">
+        <div class="center">
+          <h2>Včelí menu</h2>
+          <a href="index.html" class="menu-item inactive">Do úlu</a>
+          <a href="about.html" class="menu-item inactive">O včelkách</a>
+          <a href="pictures.html" class="menu-item active">Včelí obrázky</a>
+        </div>
+      </div>
+      <div class="column-right">
+        <h2 class="center">Včelí fotoalbum</h2>
+        <!-- Začátek zkopírovaného obsahu z W3S - modifikováno-->
+        <div class="pic-row">
+          <div class="pic-column pic-border">
+            <img src="files/images/vcelka-closeup.jpeg" alt="Včelka - Closeup" class="pic-max-width" onclick="myFunction(this);">
+            <div class="pic-center">
+              <p>Včelka - Closeup</p>
+            </div>
+          </div>
+          <div class="pic-column pic-border">
+            <img src="files/images/vcelka-hnizdo.jpg" alt="Včelí hnízdo" class="pic-max-width" onclick="myFunction(this);">
+            <div class="pic-center">
+              <p>Včelí hnízdo</p>
+            </div>
+          </div>
+          <div class="pic-column pic-border">
+            <img src="files/images/vcelka-kralovna.jpg" alt="Královna" class="pic-max-width" onclick="myFunction(this);">
+            <div class="pic-center">
+              <p>Královna</p>
+            </div>
+          </div>
+          <div class="pic-column pic-border">
+            <img src="files/images/vcelka-kvetinka.jpg" alt="Včelka na kytičce" class="pic-max-width" onclick="myFunction(this);">
+            <div class="pic-center">
+              <p>Včelka na kytičce</p>
+            </div>
+          </div>
+        </div>
+        <div class="pic-container pic-border">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" class="pic-max-width">
+          <div id="imgtext"></div>
+        </div>
+        <script src="files/js/pictures.js"></script>
+        <!-- Konec zkopírovaného obsahu z W3S-->
+      </div>
+    </div>
+  <footer class="footer-center footer">
+    <div class="footer-border-black"></div>
+    <div class="footer-content">
+      <p class="footer-disclaimer"> --{ Obsah na této stránce je pouze pro školní účely! }--</p>
+      <p>Odevzdáno 2023-03-02</p>
+      <p>
+        <a href="https://betlemska.cz" target="_blank">SPŠS Betlemská</a> | <a href="http://www.moodle-betlemska.cz/course/view.php?id=98" target="_blank">Moodle - 2.I APS</a>
+      </p>
+    </div>
+    <div class="footer-border-white"></div>
+    <div class="footer-line">
+      <div class="footer-center">
+        <p>Made by ZilXen - 2023 &nbsp;|&nbsp; Obsah na této stránce je pouze pro školní účely! &nbsp;|&nbsp; Icons by</p>
+        <a href="https://icons8.com/" class="green" target="_blank">icons8.com</a>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

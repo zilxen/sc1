@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+html, body {
+  font-family: 'Cabin', Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1380px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 0px;
+}
+.background-img {
+  background-image: url('images/background.jpeg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: #e2e3e0 ;
+}
+.center{
+  float: none;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left{
+  text-align: left;
+}
+.content-divider{
+  height: 3px;
+  opacity: .15;
+}
+a,h1,h2,h3,p {
+  margin: 0;
+  padding: 8px;
+}
+.shiba{
+  width: 600px;
+  height: auto;
+}
+.shiba-height{
+  width: auto;
+  height: 485px;
+}
+.spacing{
+  padding-bottom: 5px
+}

@@ -1,0 +1,156 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #333;
+  color: #fff;
+  opacity: .85;
+}
+
+.logo a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul.navbar {
+  display: flex;
+  list-style: none;
+}
+
+li.navbar-item {
+  margin: 0 10px;
+}
+
+a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+a i {
+  margin-right: 5px;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+a.active{
+  background-color: #11506d;
+  color: white;
+}
+
+.language-menu {
+  display: flex;
+  text-align: center;
+}
+
+.language-menu select {
+  appearance: none;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.language-menu:hover select {
+  display: flex;
+}
+
+.nav-icon {
+  padding-right: 6px;
+}
+
+/* --- rainbow --- */
+.rainbow-bg{
+		animation: rainbow-bg 2.5s linear;
+		animation-iteration-count: infinite;
+}
+
+.rainbow-text{
+		animation: rainbow-text 2.5s linear;
+		animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg{
+		100%,0%{
+			background-color: rgb(255,0,0);
+		}
+		8%{
+			background-color: rgb(255,127,0);
+		}
+		16%{
+			background-color: rgb(255,255,0);
+		}
+		25%{
+			background-color: rgb(127,255,0);
+		}
+		33%{
+			background-color: rgb(0,255,0);
+		}
+		41%{
+			background-color: rgb(0,255,127);
+		}
+		50%{
+			background-color: rgb(0,255,255);
+		}
+		58%{
+			background-color: rgb(0,127,255);
+		}
+		66%{
+			background-color: rgb(0,0,255);
+		}
+		75%{
+			background-color: rgb(127,0,255);
+		}
+		83%{
+			background-color: rgb(255,0,255);
+		}
+		91%{
+			background-color: rgb(255,0,127);
+		}
+}
+
+@keyframes rainbow-text{
+		100%,0%{
+			color: rgb(255,0,0);
+		}
+		8%{
+			color: rgb(255,127,0);
+		}
+		16%{
+			color: rgb(255,255,0);
+		}
+		25%{
+			color: rgb(127,255,0);
+		}
+		33%{
+			color: rgb(0,255,0);
+		}
+		41%{
+			color: rgb(0,255,127);
+		}
+		50%{
+			color: rgb(0,255,255);
+		}
+		58%{
+			color: rgb(0,127,255);
+		}
+		66%{
+			color: rgb(0,0,255);
+		}
+		75%{
+			color: rgb(127,0,255);
+		}
+		83%{
+			color: rgb(255,0,255);
+		}
+		91%{
+			color: rgb(255,0,127);
+		}
+}

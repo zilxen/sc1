@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Včelí web - Bee our guest</title>
+    <link rel="stylesheet" href="files/style.css" type="text/css">
+    <link rel="stylesheet" href="files/css/navigation-bar.css" type="text/css">
+    <link rel="stylesheet" href="files/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="files/css/photos.css" type="text/css">
+    <link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="background-image">
+    <div class="row">
+      <div class="column-left">
+        <div class="center">
+          <h2>Včelí menu</h2>
+          <ul class="navbar">
+            <li class="navbar-item">
+              <a href="index.html" class="active">
+                <img class="nav-icon" src="files/icons/beehive.png" alt="domů do úlu">
+                Do úlu
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="about.html" class="menu-item inactive">
+                <img class="nav-icon" src="files/icons/bee.png" alt="domů do úlu">
+                O včelkách
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="photos.html" class="active">
+                <img class="nav-icon" src="files/icons/images.png" alt="domů do úlu">
+                Obrázky z akcí
+              </a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column-right">
+        
+        <div class="photo-album">
+          <img src="files/images/DSC_0982.jpg" alt="Image 1">
+          <img src="files/images/IMG_0536.jpg" alt="Image 2">
+          <img src="files/images/IMG_1175.jpg" alt="Image 3">
+          <img src="files/images/IMG_1654.jpg" alt="Image 4">
+          <img src="files/images/IMG_1701.jpg" alt="Image 5">
+          <img src="files/images/IMG_3879.jpg" alt="Image 6">
+          <img src="files/images/IMG_3889.jpg" alt="Image 7">
+          <img src="files/images/IMG_3961.jpg" alt="Image 8">
+          <img src="files/images/IMG_7881.jpg" alt="Image 9">
+          <img src="files/images/IMG_7943.jpg" alt="Image 10">
+          <img src="files/images/WhatsApp Image 2017-10-01 at 17.10.50(1).jpeg" alt="Image 11">
+          <img src="files/images/WhatsApp Image 2017-10-01 at 17.10.50(2).jpeg" alt="Image 12">
+          <img src="files/images/WhatsApp Image 2017-10-01 at 17.10.50(3).jpeg" alt="Image 13">
+          <img src="files/images/WhatsApp Image 2017-10-01 at 17.10.51(1).jpeg" alt="Image 14">
+          <img src="files/images/WhatsApp Image 2017-10-01 at 17.10.51(2).jpeg" alt="Image 15">
+          <img src="files/images/WhatsApp Image 2017-10-01 at 17.10.51(3).jpeg" alt="Image 16">          
+          <img src="files/images/WhatsApp Image 2017-10-01 at 17.10.51.jpeg" alt="Image 17">
+          <img src="files/images/WhatsApp Image 2017-10-01 at 17.10.52.jpeg" alt="Image 18">
+        </div>
+        
+        <div class="image-popup">
+          <span class="close-popup">&times;</span>
+          <img src="" alt="Popup Image">
+        </div>
+        
+        <script>// Get the image and popup containers
+          // Get the image and popup containers
+// Get the image and popup containers
+var images = document.querySelectorAll('.photo-album img');
+var popup = document.querySelector('.image-popup');
+var popupImage = document.querySelector('.image-popup img');
+var closePopup = document.querySelector('.close-popup');
+
+// Create an array of image sources
+var imageSources = Array.from(images).map(function(image) {
+  return image.src;
+});
+
+// Add click event listeners to each image
+images.forEach(function(image) {
+  image.addEventListener('click', function() {
+    // Set the popup image source to the clicked image source
+    popupImage.src = image.src;
+    // Show the popup
+    popup.style.display = 'block';
+  });
+});
+
+// Add click event listener to the close button
+closePopup.addEventListener('click', function() {
+  // Hide the popup
+  popup.style.display = 'none';
+});
+
+// Add event listener for "Escape" key press
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    // Hide the popup
+    popup.style.display = 'none';
+  } else if (event.key === 'ArrowLeft') {
+    // Get the current image source index
+    var index = imageSources.indexOf(popupImage.src);
+    // If the current image is not the first one, show the previous one
+    if (index > 0) {
+      popupImage.src = imageSources[index - 1];
+    }
+  } else if (event.key === 'ArrowRight') {
+    // Get the current image source index
+    var index = imageSources.indexOf(popupImage.src);
+    // If the current image is not the last one, show the next one
+    if (index < imageSources.length - 1) {
+      popupImage.src = imageSources[index + 1];
+    }
+  }
+});
+
+// Add event listener for click outside the popup container
+document.addEventListener('click', function(event) {
+  if (event.target === popup) {
+    // Hide the popup
+    popup.style.display = 'none';
+  }
+});
+
+
+          </script>
+
+      </div>
+    </div>
+    <footer class="footer-center footer">
+      <div class="footer-border-black"></div>
+      <div class="footer-content">
+        <p class="footer-disclaimer"> --{ Obsah na této stránce je pouze pro školní účely! }--</p>
+        <p>Odevzdáno 2023-03-02</p>
+        <p>
+          <a href="https://betlemska.cz" target="_blank" class="footer-item">SPŠS Betlemská</a> | <a href="http://www.moodle-betlemska.cz/course/view.php?id=98" target="_blank" class="footer-item">Moodle - 2.I APS</a>
+        </p>
+      </div>
+      <div class="footer-border-white"></div>
+      <div class="footer-line">
+        <div class="footer-center">
+          <p>Made by ZilXen - 2023 &nbsp;|&nbsp; Obsah na této stránce je pouze pro školní účely! &nbsp;|&nbsp; Icons by</p>
+          <a href="https://icons8.com/" class="green" target="_blank">icons8.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

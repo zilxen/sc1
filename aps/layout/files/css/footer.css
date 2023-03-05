@@ -1,0 +1,14 @@
+footer {
+  background-color: #493c0b;
+  color: #F5F5DC;  
+  opacity: .88;
+}
+footer p {
+  text-align: center;
+}
+footer a {
+  display: inline-block;
+}
+.footer-margin{
+  margin-bottom: -18px;
+}
