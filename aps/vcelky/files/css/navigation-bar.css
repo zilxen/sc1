@@ -30,6 +30,13 @@
     cursor: pointer;
     text-decoration: underline;
   }
+
+  p.navbar-item {
+    margin: 16px 0 0 12px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
   
   .nav-icon {   
     position: relative;
